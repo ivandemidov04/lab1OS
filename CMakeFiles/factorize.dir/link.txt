@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/factorize.dir/src/Bench/factorize.cpp.o CMakeFiles/factorize.dir/src/Bench/FactorizeBenchmark.cpp.o -o factorize 
