@@ -19,11 +19,18 @@ file(GLOB SHELL_SOURCES
         "src/Commands/*.h"
 )
 
+# Define the source files for the benchmarks
 file(GLOB BENCH_SOURCES
         "src/Bench/FactorizeBenchmark.cpp"
         "src/Bench/FactorizeBenchmark.h"
+        "src/Bench/EmaSearchStrBenchmark.cpp"
+        "src/Bench/EmaSearchStrBenchmark.h"
 )
 
 # Add executable files
 add_executable(Main src/Main.cpp ${SHELL_SOURCES})
+
+# Factorize executable (only factorize related sources)
 add_executable(factorize src/Bench/factorize.cpp ${BENCH_SOURCES})
+add_executable(emasearch src/Bench/emasearch.cpp ${BENCH_SOURCES} ${SHELL_SOURCES})
+add_executable(combined src/Bench/combined.cpp ${BENCH_SOURCES} ${SHELL_SOURCES})

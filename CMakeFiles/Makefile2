@@ -65,6 +65,8 @@ CMAKE_BINARY_DIR = /home/theguppyfish/lab1OS
 # The main recursive "all" target.
 all: CMakeFiles/Main.dir/all
 all: CMakeFiles/factorize.dir/all
+all: CMakeFiles/emasearch.dir/all
+all: CMakeFiles/combined.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +76,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/Main.dir/clean
 clean: CMakeFiles/factorize.dir/clean
+clean: CMakeFiles/emasearch.dir/clean
+clean: CMakeFiles/combined.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -109,12 +113,12 @@ CMakeFiles/Main.dir/clean:
 CMakeFiles/factorize.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/theguppyfish/lab1OS/CMakeFiles --progress-num=7,8,9 "Built target factorize"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/theguppyfish/lab1OS/CMakeFiles --progress-num=23,24,25,26 "Built target factorize"
 .PHONY : CMakeFiles/factorize.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/factorize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/theguppyfish/lab1OS/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/theguppyfish/lab1OS/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/factorize.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/theguppyfish/lab1OS/CMakeFiles 0
 .PHONY : CMakeFiles/factorize.dir/rule
@@ -127,6 +131,58 @@ factorize: CMakeFiles/factorize.dir/rule
 CMakeFiles/factorize.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/clean
 .PHONY : CMakeFiles/factorize.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/emasearch.dir
+
+# All Build rule for target.
+CMakeFiles/emasearch.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/theguppyfish/lab1OS/CMakeFiles --progress-num=15,16,17,18,19,20,21,22 "Built target emasearch"
+.PHONY : CMakeFiles/emasearch.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/emasearch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/theguppyfish/lab1OS/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/emasearch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/theguppyfish/lab1OS/CMakeFiles 0
+.PHONY : CMakeFiles/emasearch.dir/rule
+
+# Convenience name for target.
+emasearch: CMakeFiles/emasearch.dir/rule
+.PHONY : emasearch
+
+# clean rule for target.
+CMakeFiles/emasearch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/clean
+.PHONY : CMakeFiles/emasearch.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/combined.dir
+
+# All Build rule for target.
+CMakeFiles/combined.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/theguppyfish/lab1OS/CMakeFiles --progress-num=7,8,9,10,11,12,13,14 "Built target combined"
+.PHONY : CMakeFiles/combined.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/combined.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/theguppyfish/lab1OS/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/combined.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/theguppyfish/lab1OS/CMakeFiles 0
+.PHONY : CMakeFiles/combined.dir/rule
+
+# Convenience name for target.
+combined: CMakeFiles/combined.dir/rule
+.PHONY : combined
+
+# clean rule for target.
+CMakeFiles/combined.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/clean
+.PHONY : CMakeFiles/combined.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

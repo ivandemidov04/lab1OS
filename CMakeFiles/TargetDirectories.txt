@@ -1,4 +1,6 @@
 /home/theguppyfish/lab1OS/CMakeFiles/Main.dir
 /home/theguppyfish/lab1OS/CMakeFiles/factorize.dir
+/home/theguppyfish/lab1OS/CMakeFiles/emasearch.dir
+/home/theguppyfish/lab1OS/CMakeFiles/combined.dir
 /home/theguppyfish/lab1OS/CMakeFiles/edit_cache.dir
 /home/theguppyfish/lab1OS/CMakeFiles/rebuild_cache.dir

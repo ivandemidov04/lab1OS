@@ -142,12 +142,70 @@ factorize/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/build
 .PHONY : factorize/fast
 
+#=============================================================================
+# Target rules for targets named emasearch
+
+# Build rule for target.
+emasearch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 emasearch
+.PHONY : emasearch
+
+# fast build rule for target.
+emasearch/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/build
+.PHONY : emasearch/fast
+
+#=============================================================================
+# Target rules for targets named combined
+
+# Build rule for target.
+combined: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 combined
+.PHONY : combined
+
+# fast build rule for target.
+combined/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/build
+.PHONY : combined/fast
+
+src/Bench/EmaSearchStrBenchmark.o: src/Bench/EmaSearchStrBenchmark.cpp.o
+.PHONY : src/Bench/EmaSearchStrBenchmark.o
+
+# target to build an object file
+src/Bench/EmaSearchStrBenchmark.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/src/Bench/EmaSearchStrBenchmark.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Bench/EmaSearchStrBenchmark.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Bench/EmaSearchStrBenchmark.cpp.o
+.PHONY : src/Bench/EmaSearchStrBenchmark.cpp.o
+
+src/Bench/EmaSearchStrBenchmark.i: src/Bench/EmaSearchStrBenchmark.cpp.i
+.PHONY : src/Bench/EmaSearchStrBenchmark.i
+
+# target to preprocess a source file
+src/Bench/EmaSearchStrBenchmark.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/src/Bench/EmaSearchStrBenchmark.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Bench/EmaSearchStrBenchmark.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Bench/EmaSearchStrBenchmark.cpp.i
+.PHONY : src/Bench/EmaSearchStrBenchmark.cpp.i
+
+src/Bench/EmaSearchStrBenchmark.s: src/Bench/EmaSearchStrBenchmark.cpp.s
+.PHONY : src/Bench/EmaSearchStrBenchmark.s
+
+# target to generate assembly for a file
+src/Bench/EmaSearchStrBenchmark.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/src/Bench/EmaSearchStrBenchmark.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Bench/EmaSearchStrBenchmark.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Bench/EmaSearchStrBenchmark.cpp.s
+.PHONY : src/Bench/EmaSearchStrBenchmark.cpp.s
+
 src/Bench/FactorizeBenchmark.o: src/Bench/FactorizeBenchmark.cpp.o
 .PHONY : src/Bench/FactorizeBenchmark.o
 
 # target to build an object file
 src/Bench/FactorizeBenchmark.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/src/Bench/FactorizeBenchmark.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Bench/FactorizeBenchmark.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Bench/FactorizeBenchmark.cpp.o
 .PHONY : src/Bench/FactorizeBenchmark.cpp.o
 
 src/Bench/FactorizeBenchmark.i: src/Bench/FactorizeBenchmark.cpp.i
@@ -156,6 +214,8 @@ src/Bench/FactorizeBenchmark.i: src/Bench/FactorizeBenchmark.cpp.i
 # target to preprocess a source file
 src/Bench/FactorizeBenchmark.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/src/Bench/FactorizeBenchmark.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Bench/FactorizeBenchmark.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Bench/FactorizeBenchmark.cpp.i
 .PHONY : src/Bench/FactorizeBenchmark.cpp.i
 
 src/Bench/FactorizeBenchmark.s: src/Bench/FactorizeBenchmark.cpp.s
@@ -164,7 +224,57 @@ src/Bench/FactorizeBenchmark.s: src/Bench/FactorizeBenchmark.cpp.s
 # target to generate assembly for a file
 src/Bench/FactorizeBenchmark.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/factorize.dir/build.make CMakeFiles/factorize.dir/src/Bench/FactorizeBenchmark.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Bench/FactorizeBenchmark.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Bench/FactorizeBenchmark.cpp.s
 .PHONY : src/Bench/FactorizeBenchmark.cpp.s
+
+src/Bench/combined.o: src/Bench/combined.cpp.o
+.PHONY : src/Bench/combined.o
+
+# target to build an object file
+src/Bench/combined.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Bench/combined.cpp.o
+.PHONY : src/Bench/combined.cpp.o
+
+src/Bench/combined.i: src/Bench/combined.cpp.i
+.PHONY : src/Bench/combined.i
+
+# target to preprocess a source file
+src/Bench/combined.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Bench/combined.cpp.i
+.PHONY : src/Bench/combined.cpp.i
+
+src/Bench/combined.s: src/Bench/combined.cpp.s
+.PHONY : src/Bench/combined.s
+
+# target to generate assembly for a file
+src/Bench/combined.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Bench/combined.cpp.s
+.PHONY : src/Bench/combined.cpp.s
+
+src/Bench/emasearch.o: src/Bench/emasearch.cpp.o
+.PHONY : src/Bench/emasearch.o
+
+# target to build an object file
+src/Bench/emasearch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Bench/emasearch.cpp.o
+.PHONY : src/Bench/emasearch.cpp.o
+
+src/Bench/emasearch.i: src/Bench/emasearch.cpp.i
+.PHONY : src/Bench/emasearch.i
+
+# target to preprocess a source file
+src/Bench/emasearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Bench/emasearch.cpp.i
+.PHONY : src/Bench/emasearch.cpp.i
+
+src/Bench/emasearch.s: src/Bench/emasearch.cpp.s
+.PHONY : src/Bench/emasearch.s
+
+# target to generate assembly for a file
+src/Bench/emasearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Bench/emasearch.cpp.s
+.PHONY : src/Bench/emasearch.cpp.s
 
 src/Bench/factorize.o: src/Bench/factorize.cpp.o
 .PHONY : src/Bench/factorize.o
@@ -196,6 +306,8 @@ src/Commands/CdCommand.o: src/Commands/CdCommand.cpp.o
 # target to build an object file
 src/Commands/CdCommand.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Commands/CdCommand.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Commands/CdCommand.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Commands/CdCommand.cpp.o
 .PHONY : src/Commands/CdCommand.cpp.o
 
 src/Commands/CdCommand.i: src/Commands/CdCommand.cpp.i
@@ -204,6 +316,8 @@ src/Commands/CdCommand.i: src/Commands/CdCommand.cpp.i
 # target to preprocess a source file
 src/Commands/CdCommand.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Commands/CdCommand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Commands/CdCommand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Commands/CdCommand.cpp.i
 .PHONY : src/Commands/CdCommand.cpp.i
 
 src/Commands/CdCommand.s: src/Commands/CdCommand.cpp.s
@@ -212,6 +326,8 @@ src/Commands/CdCommand.s: src/Commands/CdCommand.cpp.s
 # target to generate assembly for a file
 src/Commands/CdCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Commands/CdCommand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Commands/CdCommand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Commands/CdCommand.cpp.s
 .PHONY : src/Commands/CdCommand.cpp.s
 
 src/Commands/ClearCommand.o: src/Commands/ClearCommand.cpp.o
@@ -220,6 +336,8 @@ src/Commands/ClearCommand.o: src/Commands/ClearCommand.cpp.o
 # target to build an object file
 src/Commands/ClearCommand.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Commands/ClearCommand.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Commands/ClearCommand.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Commands/ClearCommand.cpp.o
 .PHONY : src/Commands/ClearCommand.cpp.o
 
 src/Commands/ClearCommand.i: src/Commands/ClearCommand.cpp.i
@@ -228,6 +346,8 @@ src/Commands/ClearCommand.i: src/Commands/ClearCommand.cpp.i
 # target to preprocess a source file
 src/Commands/ClearCommand.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Commands/ClearCommand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Commands/ClearCommand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Commands/ClearCommand.cpp.i
 .PHONY : src/Commands/ClearCommand.cpp.i
 
 src/Commands/ClearCommand.s: src/Commands/ClearCommand.cpp.s
@@ -236,6 +356,8 @@ src/Commands/ClearCommand.s: src/Commands/ClearCommand.cpp.s
 # target to generate assembly for a file
 src/Commands/ClearCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Commands/ClearCommand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Commands/ClearCommand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Commands/ClearCommand.cpp.s
 .PHONY : src/Commands/ClearCommand.cpp.s
 
 src/Commands/HistoryCommand.o: src/Commands/HistoryCommand.cpp.o
@@ -244,6 +366,8 @@ src/Commands/HistoryCommand.o: src/Commands/HistoryCommand.cpp.o
 # target to build an object file
 src/Commands/HistoryCommand.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Commands/HistoryCommand.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Commands/HistoryCommand.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Commands/HistoryCommand.cpp.o
 .PHONY : src/Commands/HistoryCommand.cpp.o
 
 src/Commands/HistoryCommand.i: src/Commands/HistoryCommand.cpp.i
@@ -252,6 +376,8 @@ src/Commands/HistoryCommand.i: src/Commands/HistoryCommand.cpp.i
 # target to preprocess a source file
 src/Commands/HistoryCommand.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Commands/HistoryCommand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Commands/HistoryCommand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Commands/HistoryCommand.cpp.i
 .PHONY : src/Commands/HistoryCommand.cpp.i
 
 src/Commands/HistoryCommand.s: src/Commands/HistoryCommand.cpp.s
@@ -260,6 +386,8 @@ src/Commands/HistoryCommand.s: src/Commands/HistoryCommand.cpp.s
 # target to generate assembly for a file
 src/Commands/HistoryCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Commands/HistoryCommand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Commands/HistoryCommand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Commands/HistoryCommand.cpp.s
 .PHONY : src/Commands/HistoryCommand.cpp.s
 
 src/Main.o: src/Main.cpp.o
@@ -292,6 +420,8 @@ src/Shell.o: src/Shell.cpp.o
 # target to build an object file
 src/Shell.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Shell.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Shell.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Shell.cpp.o
 .PHONY : src/Shell.cpp.o
 
 src/Shell.i: src/Shell.cpp.i
@@ -300,6 +430,8 @@ src/Shell.i: src/Shell.cpp.i
 # target to preprocess a source file
 src/Shell.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Shell.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Shell.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Shell.cpp.i
 .PHONY : src/Shell.cpp.i
 
 src/Shell.s: src/Shell.cpp.s
@@ -308,6 +440,8 @@ src/Shell.s: src/Shell.cpp.s
 # target to generate assembly for a file
 src/Shell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/src/Shell.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emasearch.dir/build.make CMakeFiles/emasearch.dir/src/Shell.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined.dir/build.make CMakeFiles/combined.dir/src/Shell.cpp.s
 .PHONY : src/Shell.cpp.s
 
 # Help Target
@@ -319,10 +453,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Main"
+	@echo "... combined"
+	@echo "... emasearch"
 	@echo "... factorize"
+	@echo "... src/Bench/EmaSearchStrBenchmark.o"
+	@echo "... src/Bench/EmaSearchStrBenchmark.i"
+	@echo "... src/Bench/EmaSearchStrBenchmark.s"
 	@echo "... src/Bench/FactorizeBenchmark.o"
 	@echo "... src/Bench/FactorizeBenchmark.i"
 	@echo "... src/Bench/FactorizeBenchmark.s"
+	@echo "... src/Bench/combined.o"
+	@echo "... src/Bench/combined.i"
+	@echo "... src/Bench/combined.s"
+	@echo "... src/Bench/emasearch.o"
+	@echo "... src/Bench/emasearch.i"
+	@echo "... src/Bench/emasearch.s"
 	@echo "... src/Bench/factorize.o"
 	@echo "... src/Bench/factorize.i"
 	@echo "... src/Bench/factorize.s"
