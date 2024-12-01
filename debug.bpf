@@ -1,0 +1,30 @@
+#!/usr/bin/bpftrace
+
+tracepoint:syscalls:sys_enter_read
+{
+    printf("read() called by PID %d, fd = %d, count = %d\n", pid, args->fd, args->count);
+}
+
+tracepoint:syscalls:sys_enter_write
+{
+    printf("write() called by PID %d, fd = %d, count = %d\n", pid, args->fd, args->count);
+}
+
+uprobe:/home/theguppyfish/lab1OS/factorize:factorize
+{
+    printf("Function factorize called by PID %d\n", pid);
+}
+
+uretprobe:/home/theguppyfish/lab1OS/factorize:factorize
+{
+    printf("Function factorize returned by PID %d\n", pid);
+}
+
+tracepoint:sched:sched_switch {
+    @switches = count();
+}
+
+interval:s:5 {
+    print(@switches);
+    clear(@switches);
+}
